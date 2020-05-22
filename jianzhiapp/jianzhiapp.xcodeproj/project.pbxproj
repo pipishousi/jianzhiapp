@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		600D5616C95BC3EC6AE548A9 /* Pods_jianzhiapp_jianzhiappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87208A4E74DC652E95345040 /* Pods_jianzhiapp_jianzhiappUITests.framework */; };
+		DE38424C2476B6270015884F /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE38424B2476B6270015884F /* Live.storyboard */; };
+		DE38424E2476B6350015884F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE38424D2476B6350015884F /* Home.storyboard */; };
+		DE3842502476B6410015884F /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE38424F2476B6410015884F /* Follow.storyboard */; };
+		DE38425E2476BD800015884F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38425D2476BD800015884F /* HomeViewController.swift */; };
+		DE3842602476C4E40015884F /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38425F2476C4E40015884F /* UIBarButtonItem-Extension.swift */; };
+		DE3842652476C9510015884F /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3842642476C9500015884F /* PageTitleView.swift */; };
+		DE3842672476CA310015884F /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3842662476CA310015884F /* Common.swift */; };
+		DE3842692476E0D10015884F /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3842682476E0D10015884F /* UIColor-Extension.swift */; };
+		DE99F0E02478162200948372 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99F0DF2478162100948372 /* PageContentView.swift */; };
+		DE99F0E424782A7000948372 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99F0E324782A7000948372 /* RecommendViewController.swift */; };
 		DEABF2D0247432D300BDD0BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEABF2CF247432D300BDD0BE /* AppDelegate.swift */; };
 		DEABF2D2247432D300BDD0BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEABF2D1247432D300BDD0BE /* SceneDelegate.swift */; };
 		DEABF2D4247432D300BDD0BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEABF2D3247432D300BDD0BE /* ViewController.swift */; };
@@ -15,6 +26,25 @@
 		DEABF2DC247432D500BDD0BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEABF2DA247432D500BDD0BE /* LaunchScreen.storyboard */; };
 		DEABF2E7247432D500BDD0BE /* jianzhiappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEABF2E6247432D500BDD0BE /* jianzhiappTests.swift */; };
 		DEABF2F2247432D500BDD0BE /* jianzhiappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEABF2F1247432D500BDD0BE /* jianzhiappUITests.swift */; };
+		DEABF3192474405D00BDD0BE /* BmobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEABF3182474405D00BDD0BE /* BmobSDK.framework */; };
+		DEABF31F2474418000BDD0BE /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DEABF31E2474418000BDD0BE /* libz.1.2.5.tbd */; };
+		DEABF3212474418E00BDD0BE /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DEABF3202474418E00BDD0BE /* libc++.tbd */; };
+		DEABF3232474419B00BDD0BE /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DEABF3222474419B00BDD0BE /* libsqlite3.tbd */; };
+		DEABF325247441AA00BDD0BE /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DEABF324247441AA00BDD0BE /* libicucore.tbd */; };
+		DEABF327247441B200BDD0BE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEABF326247441B200BDD0BE /* SystemConfiguration.framework */; };
+		DEABF329247441C000BDD0BE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEABF328247441C000BDD0BE /* AVFoundation.framework */; };
+		DEABF32B247441C700BDD0BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEABF32A247441C700BDD0BE /* Foundation.framework */; };
+		DEABF32D247441CD00BDD0BE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEABF32C247441CD00BDD0BE /* Security.framework */; };
+		DEABF32F247441DA00BDD0BE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEABF32E247441DA00BDD0BE /* CFNetwork.framework */; };
+		DEABF331247441EE00BDD0BE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEABF330247441EE00BDD0BE /* CoreLocation.framework */; };
+		DEABF333247441F500BDD0BE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEABF332247441F500BDD0BE /* CoreTelephony.framework */; };
+		DEABF335247441FE00BDD0BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEABF334247441FD00BDD0BE /* CoreGraphics.framework */; };
+		DEABF3372474420700BDD0BE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEABF3362474420700BDD0BE /* MediaPlayer.framework */; };
+		DEABF3392474421300BDD0BE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEABF3382474421300BDD0BE /* MobileCoreServices.framework */; };
+		DEABF33B2474424C00BDD0BE /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEABF33A2474424C00BDD0BE /* Photos.framework */; };
+		DEE151B424757E5200B456A2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE151B324757E5200B456A2 /* MainViewController.swift */; };
+		E0814B8EB8C2BA6C1D97E7EA /* Pods_jianzhiapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09CB70E83CBC381FD153F9B /* Pods_jianzhiapp.framework */; };
+		E9DB68E7B6D7375544550F53 /* Pods_jianzhiappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763A7839B141B2C88D6C0997 /* Pods_jianzhiappTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +65,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40D4226DAFED828087E9B444 /* Pods-jianzhiapp-jianzhiappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jianzhiapp-jianzhiappUITests.debug.xcconfig"; path = "Target Support Files/Pods-jianzhiapp-jianzhiappUITests/Pods-jianzhiapp-jianzhiappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		504DA3AF0B80F827425BE51B /* Pods-jianzhiapp-jianzhiappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jianzhiapp-jianzhiappUITests.release.xcconfig"; path = "Target Support Files/Pods-jianzhiapp-jianzhiappUITests/Pods-jianzhiapp-jianzhiappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		763A7839B141B2C88D6C0997 /* Pods_jianzhiappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jianzhiappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E10A0B70F676EF561F8C5D /* Pods-jianzhiapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jianzhiapp.release.xcconfig"; path = "Target Support Files/Pods-jianzhiapp/Pods-jianzhiapp.release.xcconfig"; sourceTree = "<group>"; };
+		87208A4E74DC652E95345040 /* Pods_jianzhiapp_jianzhiappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jianzhiapp_jianzhiappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C10C37A5AF939AAEBB90F414 /* Pods-jianzhiapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jianzhiapp.debug.xcconfig"; path = "Target Support Files/Pods-jianzhiapp/Pods-jianzhiapp.debug.xcconfig"; sourceTree = "<group>"; };
+		C4BC7F9BDC280DCC23987DFB /* Pods-jianzhiappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jianzhiappTests.release.xcconfig"; path = "Target Support Files/Pods-jianzhiappTests/Pods-jianzhiappTests.release.xcconfig"; sourceTree = "<group>"; };
+		DE38424B2476B6270015884F /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
+		DE38424D2476B6350015884F /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		DE38424F2476B6410015884F /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Follow.storyboard; sourceTree = "<group>"; };
+		DE38425D2476BD800015884F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DE38425F2476C4E40015884F /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		DE3842642476C9500015884F /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		DE3842662476CA310015884F /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		DE3842682476E0D10015884F /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		DE99F0DF2478162100948372 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		DE99F0E324782A7000948372 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		DEABF2CC247432D300BDD0BE /* jianzhiapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jianzhiapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEABF2CF247432D300BDD0BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEABF2D1247432D300BDD0BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +96,26 @@
 		DEABF2ED247432D500BDD0BE /* jianzhiappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jianzhiappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEABF2F1247432D500BDD0BE /* jianzhiappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jianzhiappUITests.swift; sourceTree = "<group>"; };
 		DEABF2F3247432D500BDD0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEABF3182474405D00BDD0BE /* BmobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BmobSDK.framework; sourceTree = "<group>"; };
+		DEABF31A2474407200BDD0BE /* jianzhiapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jianzhiapp-Bridging-Header.h"; sourceTree = "<group>"; };
+		DEABF31E2474418000BDD0BE /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		DEABF3202474418E00BDD0BE /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		DEABF3222474419B00BDD0BE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		DEABF324247441AA00BDD0BE /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		DEABF326247441B200BDD0BE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DEABF328247441C000BDD0BE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DEABF32A247441C700BDD0BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DEABF32C247441CD00BDD0BE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DEABF32E247441DA00BDD0BE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DEABF330247441EE00BDD0BE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DEABF332247441F500BDD0BE /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		DEABF334247441FD00BDD0BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DEABF3362474420700BDD0BE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		DEABF3382474421300BDD0BE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DEABF33A2474424C00BDD0BE /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		DEE151B324757E5200B456A2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F09CB70E83CBC381FD153F9B /* Pods_jianzhiapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jianzhiapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5AB463DEDF506CA77266953 /* Pods-jianzhiappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jianzhiappTests.debug.xcconfig"; path = "Target Support Files/Pods-jianzhiappTests/Pods-jianzhiappTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +123,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEABF33B2474424C00BDD0BE /* Photos.framework in Frameworks */,
+				DEABF3392474421300BDD0BE /* MobileCoreServices.framework in Frameworks */,
+				DEABF3372474420700BDD0BE /* MediaPlayer.framework in Frameworks */,
+				DEABF335247441FE00BDD0BE /* CoreGraphics.framework in Frameworks */,
+				DEABF333247441F500BDD0BE /* CoreTelephony.framework in Frameworks */,
+				DEABF331247441EE00BDD0BE /* CoreLocation.framework in Frameworks */,
+				DEABF32F247441DA00BDD0BE /* CFNetwork.framework in Frameworks */,
+				DEABF32D247441CD00BDD0BE /* Security.framework in Frameworks */,
+				DEABF32B247441C700BDD0BE /* Foundation.framework in Frameworks */,
+				DEABF329247441C000BDD0BE /* AVFoundation.framework in Frameworks */,
+				DEABF327247441B200BDD0BE /* SystemConfiguration.framework in Frameworks */,
+				DEABF325247441AA00BDD0BE /* libicucore.tbd in Frameworks */,
+				DEABF3232474419B00BDD0BE /* libsqlite3.tbd in Frameworks */,
+				DEABF3212474418E00BDD0BE /* libc++.tbd in Frameworks */,
+				DEABF31F2474418000BDD0BE /* libz.1.2.5.tbd in Frameworks */,
+				DEABF3192474405D00BDD0BE /* BmobSDK.framework in Frameworks */,
+				E0814B8EB8C2BA6C1D97E7EA /* Pods_jianzhiapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9DB68E7B6D7375544550F53 /* Pods_jianzhiappTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +155,106 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				600D5616C95BC3EC6AE548A9 /* Pods_jianzhiapp_jianzhiappUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8EFFE9402A6A72875C1DB8FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C10C37A5AF939AAEBB90F414 /* Pods-jianzhiapp.debug.xcconfig */,
+				84E10A0B70F676EF561F8C5D /* Pods-jianzhiapp.release.xcconfig */,
+				40D4226DAFED828087E9B444 /* Pods-jianzhiapp-jianzhiappUITests.debug.xcconfig */,
+				504DA3AF0B80F827425BE51B /* Pods-jianzhiapp-jianzhiappUITests.release.xcconfig */,
+				F5AB463DEDF506CA77266953 /* Pods-jianzhiappTests.debug.xcconfig */,
+				C4BC7F9BDC280DCC23987DFB /* Pods-jianzhiappTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE3842572476BD350015884F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE38424D2476B6350015884F /* Home.storyboard */,
+				DE38425D2476BD800015884F /* HomeViewController.swift */,
+				DE99F0E324782A7000948372 /* RecommendViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE3842582476BD350015884F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE3842592476BD350015884F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE38425A2476BD470015884F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE38425B2476BD470015884F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE38425C2476BD470015884F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE3842612476C8F60015884F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE3842622476C8F60015884F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEABF2D5247432D300BDD0BE /* Main.storyboard */,
+				DEE151B324757E5200B456A2 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE3842632476C8F60015884F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE3842642476C9500015884F /* PageTitleView.swift */,
+				DE99F0DF2478162100948372 /* PageContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DEABF2C3247432D300BDD0BE = {
 			isa = PBXGroup;
 			children = (
+				DEABF3182474405D00BDD0BE /* BmobSDK.framework */,
 				DEABF2CE247432D300BDD0BE /* jianzhiapp */,
 				DEABF2E5247432D500BDD0BE /* jianzhiappTests */,
 				DEABF2F0247432D500BDD0BE /* jianzhiappUITests */,
 				DEABF2CD247432D300BDD0BE /* Products */,
+				DEABF31D2474418000BDD0BE /* Frameworks */,
+				8EFFE9402A6A72875C1DB8FB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +271,14 @@
 		DEABF2CE247432D300BDD0BE /* jianzhiapp */ = {
 			isa = PBXGroup;
 			children = (
+				DEABF2FF2474397F00BDD0BE /* Classes */,
 				DEABF2CF247432D300BDD0BE /* AppDelegate.swift */,
 				DEABF2D1247432D300BDD0BE /* SceneDelegate.swift */,
 				DEABF2D3247432D300BDD0BE /* ViewController.swift */,
-				DEABF2D5247432D300BDD0BE /* Main.storyboard */,
 				DEABF2D8247432D500BDD0BE /* Assets.xcassets */,
 				DEABF2DA247432D500BDD0BE /* LaunchScreen.storyboard */,
 				DEABF2DD247432D500BDD0BE /* Info.plist */,
+				DEABF31A2474407200BDD0BE /* jianzhiapp-Bridging-Header.h */,
 			);
 			path = jianzhiapp;
 			sourceTree = "<group>";
@@ -128,6 +301,148 @@
 			path = jianzhiappUITests;
 			sourceTree = "<group>";
 		};
+		DEABF2FF2474397F00BDD0BE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DEABF3132474398000BDD0BE /* Main */,
+				DEABF3002474397F00BDD0BE /* Home */,
+				DEABF3092474398000BDD0BE /* Follow */,
+				DEABF30E2474398000BDD0BE /* Live */,
+				DEABF3052474397F00BDD0BE /* Tools */,
+				DEABF3072474398000BDD0BE /* Room */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		DEABF3002474397F00BDD0BE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DE3842582476BD350015884F /* Model */,
+				DE3842592476BD350015884F /* View */,
+				DE3842572476BD350015884F /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DEABF3052474397F00BDD0BE /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DE3842662476CA310015884F /* Common.swift */,
+				DEABF3062474397F00BDD0BE /* Extension */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		DEABF3062474397F00BDD0BE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DE38425F2476C4E40015884F /* UIBarButtonItem-Extension.swift */,
+				DE3842682476E0D10015884F /* UIColor-Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DEABF3072474398000BDD0BE /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				DEABF3082474398000BDD0BE /* Controller */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		DEABF3082474398000BDD0BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DEABF3092474398000BDD0BE /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				DE38425C2476BD470015884F /* Controller */,
+				DE38425A2476BD470015884F /* Model */,
+				DE38425B2476BD470015884F /* View */,
+				DE38424F2476B6410015884F /* Follow.storyboard */,
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		DEABF30E2474398000BDD0BE /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				DE38424B2476B6270015884F /* Live.storyboard */,
+				DEABF30F2474398000BDD0BE /* ViewModel */,
+				DEABF3102474398000BDD0BE /* Controller */,
+				DEABF3112474398000BDD0BE /* Model */,
+				DEABF3122474398000BDD0BE /* View */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		DEABF30F2474398000BDD0BE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DEABF3102474398000BDD0BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DEABF3112474398000BDD0BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEABF3122474398000BDD0BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEABF3132474398000BDD0BE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DE3842622476C8F60015884F /* Controller */,
+				DE3842612476C8F60015884F /* Model */,
+				DE3842632476C8F60015884F /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DEABF31D2474418000BDD0BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEABF33A2474424C00BDD0BE /* Photos.framework */,
+				DEABF3382474421300BDD0BE /* MobileCoreServices.framework */,
+				DEABF3362474420700BDD0BE /* MediaPlayer.framework */,
+				DEABF334247441FD00BDD0BE /* CoreGraphics.framework */,
+				DEABF332247441F500BDD0BE /* CoreTelephony.framework */,
+				DEABF330247441EE00BDD0BE /* CoreLocation.framework */,
+				DEABF32E247441DA00BDD0BE /* CFNetwork.framework */,
+				DEABF32C247441CD00BDD0BE /* Security.framework */,
+				DEABF32A247441C700BDD0BE /* Foundation.framework */,
+				DEABF328247441C000BDD0BE /* AVFoundation.framework */,
+				DEABF326247441B200BDD0BE /* SystemConfiguration.framework */,
+				DEABF324247441AA00BDD0BE /* libicucore.tbd */,
+				DEABF3222474419B00BDD0BE /* libsqlite3.tbd */,
+				DEABF3202474418E00BDD0BE /* libc++.tbd */,
+				DEABF31E2474418000BDD0BE /* libz.1.2.5.tbd */,
+				F09CB70E83CBC381FD153F9B /* Pods_jianzhiapp.framework */,
+				87208A4E74DC652E95345040 /* Pods_jianzhiapp_jianzhiappUITests.framework */,
+				763A7839B141B2C88D6C0997 /* Pods_jianzhiappTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +450,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEABF2F6247432D500BDD0BE /* Build configuration list for PBXNativeTarget "jianzhiapp" */;
 			buildPhases = (
+				84E8AD3BDE16246C00B39FD9 /* [CP] Check Pods Manifest.lock */,
 				DEABF2C8247432D300BDD0BE /* Sources */,
 				DEABF2C9247432D300BDD0BE /* Frameworks */,
 				DEABF2CA247432D300BDD0BE /* Resources */,
@@ -152,6 +468,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEABF2F9247432D500BDD0BE /* Build configuration list for PBXNativeTarget "jianzhiappTests" */;
 			buildPhases = (
+				F5F841592F625DA2CFFD9627 /* [CP] Check Pods Manifest.lock */,
 				DEABF2DE247432D500BDD0BE /* Sources */,
 				DEABF2DF247432D500BDD0BE /* Frameworks */,
 				DEABF2E0247432D500BDD0BE /* Resources */,
@@ -170,6 +487,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEABF2FC247432D500BDD0BE /* Build configuration list for PBXNativeTarget "jianzhiappUITests" */;
 			buildPhases = (
+				2706A41F5A813DDD61264B66 /* [CP] Check Pods Manifest.lock */,
 				DEABF2E9247432D500BDD0BE /* Sources */,
 				DEABF2EA247432D500BDD0BE /* Frameworks */,
 				DEABF2EB247432D500BDD0BE /* Resources */,
@@ -196,6 +514,7 @@
 				TargetAttributes = {
 					DEABF2CB247432D300BDD0BE = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					DEABF2E1247432D500BDD0BE = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -233,8 +552,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEABF2DC247432D500BDD0BE /* LaunchScreen.storyboard in Resources */,
+				DE38424E2476B6350015884F /* Home.storyboard in Resources */,
 				DEABF2D9247432D500BDD0BE /* Assets.xcassets in Resources */,
+				DE38424C2476B6270015884F /* Live.storyboard in Resources */,
 				DEABF2D7247432D300BDD0BE /* Main.storyboard in Resources */,
+				DE3842502476B6410015884F /* Follow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +576,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2706A41F5A813DDD61264B66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jianzhiapp-jianzhiappUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84E8AD3BDE16246C00B39FD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jianzhiapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5F841592F625DA2CFFD9627 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jianzhiappTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DEABF2C8247432D300BDD0BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE3842672476CA310015884F /* Common.swift in Sources */,
+				DE38425E2476BD800015884F /* HomeViewController.swift in Sources */,
 				DEABF2D4247432D300BDD0BE /* ViewController.swift in Sources */,
+				DE99F0E02478162200948372 /* PageContentView.swift in Sources */,
+				DE3842602476C4E40015884F /* UIBarButtonItem-Extension.swift in Sources */,
+				DE3842692476E0D10015884F /* UIColor-Extension.swift in Sources */,
 				DEABF2D0247432D300BDD0BE /* AppDelegate.swift in Sources */,
 				DEABF2D2247432D300BDD0BE /* SceneDelegate.swift in Sources */,
+				DEE151B424757E5200B456A2 /* MainViewController.swift in Sources */,
+				DE3842652476C9510015884F /* PageTitleView.swift in Sources */,
+				DE99F0E424782A7000948372 /* RecommendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,17 +831,26 @@
 		};
 		DEABF2F7247432D500BDD0BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C10C37A5AF939AAEBB90F414 /* Pods-jianzhiapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CNG22JY58S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = jianzhiapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ceshi.jianzhiapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "jianzhiapp/jianzhiapp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,17 +858,25 @@
 		};
 		DEABF2F8247432D500BDD0BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E10A0B70F676EF561F8C5D /* Pods-jianzhiapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CNG22JY58S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = jianzhiapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ceshi.jianzhiapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "jianzhiapp/jianzhiapp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -468,6 +884,7 @@
 		};
 		DEABF2FA247432D500BDD0BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5AB463DEDF506CA77266953 /* Pods-jianzhiappTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +907,7 @@
 		};
 		DEABF2FB247432D500BDD0BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4BC7F9BDC280DCC23987DFB /* Pods-jianzhiappTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +930,7 @@
 		};
 		DEABF2FD247432D500BDD0BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40D4226DAFED828087E9B444 /* Pods-jianzhiapp-jianzhiappUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +951,7 @@
 		};
 		DEABF2FE247432D500BDD0BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 504DA3AF0B80F827425BE51B /* Pods-jianzhiapp-jianzhiappUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

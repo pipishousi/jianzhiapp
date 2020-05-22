@@ -15,6 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Bmob.register(withAppKey: "80e5ca7f1d0ca4f7bec01d12404c7910")
+        UITabBar.appearance().tintColor = UIColor.orange
+        UITabBar.appearance().backgroundColor = UIColor.white
         return true
     }
 
