@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
     // MARK:- 懒加载属性
     fileprivate lazy var pageTitleView : PageTitleView = {[weak self] in
         let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH, width: kScreenW, height: kTitleViewH)
-        let titles = ["推荐", "游戏", "娱乐", "趣玩"]
+        let titles = ["推荐", "最新", "娱乐", "趣玩"]
         let titleView = PageTitleView(frame: titleFrame, titles: titles)
         titleView.delegate = self
         return titleView
@@ -41,6 +41,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
+        self.title = "首页"
+        navigationController?.navigationBar.barTintColor = UIColor(hue: 125, saturation: 178, brightness: 190, alpha: 1.0)
         setupUI()
     }
     
@@ -78,7 +80,7 @@ extension HomeViewController {
      
         let qrcodeItem = UIBarButtonItem(imageName: "Profile_m", highImageName: "Profile_x", size: size)
         
-        navigationItem.rightBarButtonItems = [historyItem,searchItem,qrcodeItem]
+        navigationItem.rightBarButtonItems = [qrcodeItem]
     }
 }
 // MARK:- 遵守PageTitleViewDelegate协议

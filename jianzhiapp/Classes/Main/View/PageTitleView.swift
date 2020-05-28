@@ -81,7 +81,7 @@ extension PageTitleView {
             label.tag = index
             label.font = UIFont.systemFont(ofSize: 16.0)
             label.textColor = UIColor(r: kNormalColor.0, g: kNormalColor.1, b: kNormalColor.2)
-            label.textColor = UIColor.black
+            label.textColor = UIColor(displayP3Red: 102/255, green: 102/255, blue: 102/255, alpha: 1.0)
             label.textAlignment = .center
 
             // 3.设置label的frame
@@ -111,6 +111,8 @@ extension PageTitleView {
         // 2.1.获取第一个Label
         guard let firstLabel = titleLabels.first else { return }
         firstLabel.textColor = UIColor(r: kSelectColor.0, g: kSelectColor.1, b: kSelectColor.2)
+        firstLabel.font=UIFont.boldSystemFont(ofSize: 20)
+//        firstLabel.textColor = UIColor(r: kSelectColor.0, g: kSelectColor.1, b: kSelectColor.2)
 //
         // 2.2.设置scrollLine的属性
         scrollView.addSubview(scrollLine)
@@ -134,7 +136,9 @@ extension PageTitleView {
 
         // 3.切换文字的颜色
         currentLabel.textColor = UIColor(r: kSelectColor.0, g: kSelectColor.1, b: kSelectColor.2)
+        currentLabel.font=UIFont.boldSystemFont(ofSize: 20)
         oldLabel.textColor = UIColor(r: kNormalColor.0, g: kNormalColor.1, b: kNormalColor.2)
+        oldLabel.font=UIFont.boldSystemFont(ofSize: 16)
 
         // 4.保存最新Label的下标值
         currentIndex = currentLabel.tag

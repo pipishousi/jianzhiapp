@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionNormalCell" customModule="jianzhiapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="144"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="144"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="交互设计师" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nma-Ot-Hnq">
+                        <rect key="frame" x="10" y="10" width="92" height="22"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11-12K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6BE-1s-LZ0">
+                        <rect key="frame" x="288" y="10" width="46" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.13488726317564562" green="0.8058089654691023" blue="0.84055213730569944" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="奇虎360  已上市  1000-2000人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofk-am-lI1">
+                        <rect key="frame" x="10" y="84" width="214" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.7257933937823835" green="0.72244663414935129" blue="0.70716735223141447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Simulator Screen Shot - iPhone 8 - 2020-05-24 at 10.53.35" translatesAutoresizingMaskIntoConstraints="NO" id="hzC-jK-ARA">
+                        <rect key="frame" x="10" y="110" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="9MN-uY-e1r"/>
+                            <constraint firstAttribute="height" constant="24" id="dKV-jL-csy"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="马女士·招聘主管" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85N-Xc-hIs">
+                        <rect key="frame" x="39" y="113.5" width="104" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2-3年" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98h-gg-aaM">
+                        <rect key="frame" x="10" y="42" width="46" height="21"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本科" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDT-Fd-LQB">
+                        <rect key="frame" x="64" y="42" width="35" height="21"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="视觉设计" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Scv-it-dGE">
+                        <rect key="frame" x="107" y="42" width="70" height="21"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="杭州" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWW-YK-fde">
+                        <rect key="frame" x="305" y="117" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="nma-Ot-Hnq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="23e-O9-dWP"/>
+                <constraint firstItem="Scv-it-dGE" firstAttribute="leading" secondItem="pDT-Fd-LQB" secondAttribute="trailing" constant="8" id="4zD-A7-lOx"/>
+                <constraint firstItem="98h-gg-aaM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="EVN-jN-rZf"/>
+                <constraint firstItem="Scv-it-dGE" firstAttribute="centerY" secondItem="98h-gg-aaM" secondAttribute="centerY" id="Rgz-Fc-nru"/>
+                <constraint firstItem="pDT-Fd-LQB" firstAttribute="centerY" secondItem="98h-gg-aaM" secondAttribute="centerY" id="Szh-Ua-JBK"/>
+                <constraint firstAttribute="bottom" secondItem="LWW-YK-fde" secondAttribute="bottom" constant="10" id="T25-eU-lx0"/>
+                <constraint firstItem="85N-Xc-hIs" firstAttribute="centerY" secondItem="hzC-jK-ARA" secondAttribute="centerY" id="YMo-xv-avL"/>
+                <constraint firstItem="nma-Ot-Hnq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Zdz-AT-fjS"/>
+                <constraint firstAttribute="bottom" secondItem="hzC-jK-ARA" secondAttribute="bottom" constant="10" id="abO-u8-yyv"/>
+                <constraint firstItem="85N-Xc-hIs" firstAttribute="leading" secondItem="hzC-jK-ARA" secondAttribute="trailing" constant="5" id="cal-v2-BSD"/>
+                <constraint firstItem="pDT-Fd-LQB" firstAttribute="leading" secondItem="98h-gg-aaM" secondAttribute="trailing" constant="8" id="fdN-ZX-Uh8"/>
+                <constraint firstItem="hzC-jK-ARA" firstAttribute="top" secondItem="ofk-am-lI1" secondAttribute="bottom" constant="8" id="heJ-Om-xLt"/>
+                <constraint firstAttribute="trailing" secondItem="6BE-1s-LZ0" secondAttribute="trailing" constant="10" id="ieQ-30-ApH"/>
+                <constraint firstItem="ofk-am-lI1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="jCb-TA-jej"/>
+                <constraint firstItem="6BE-1s-LZ0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="pwX-By-2VZ"/>
+                <constraint firstItem="98h-gg-aaM" firstAttribute="top" secondItem="nma-Ot-Hnq" secondAttribute="bottom" constant="10" id="rLp-2M-siA"/>
+                <constraint firstAttribute="trailing" secondItem="LWW-YK-fde" secondAttribute="trailing" constant="10" id="s3d-Gu-Nry"/>
+                <constraint firstItem="hzC-jK-ARA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="vXx-e6-ob2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="344" height="144"/>
+            <connections>
+                <outlet property="tagber" destination="98h-gg-aaM" id="Jm0-ZV-BIj"/>
+            </connections>
+            <point key="canvasLocation" x="210.1449275362319" y="108.48214285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Simulator Screen Shot - iPhone 8 - 2020-05-24 at 10.53.35" width="320" height="320"/>
+    </resources>
+</document>
