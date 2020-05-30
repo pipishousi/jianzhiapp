@@ -12,9 +12,9 @@
             <objects>
                 <viewController id="iQy-15-7Zw" customClass="MeViewController" customModule="jianzhiapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J65-dc-BUv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.85098039215686272" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="QUD-rZ-av4"/>
                     </view>
                     <navigationItem key="navigationItem" id="mQ0-pS-zch"/>
@@ -26,10 +26,10 @@
         <!--我的-->
         <scene sceneID="Y5V-qK-lM6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lDF-XK-AAx" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lDF-XK-AAx" customClass="MeNavgatViewController" customModule="jianzhiapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="我的" image="Profile_x" selectedImage="Profile_m" id="VVN-Ag-3qb"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cvk-pk-RR0">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Cvk-pk-RR0">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

@@ -8,12 +8,10 @@
 
 import UIKit
 
-protocol SelectkxiangViewHData{
-    func SelectkxiangViewH(kxiangViewH: CGFloat)
-}
+
 class CollectionXinagCell: UICollectionViewCell {
 
-      var delegate:SelectkxiangViewHData?
+     
     
 
       

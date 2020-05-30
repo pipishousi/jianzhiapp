@@ -10,7 +10,7 @@
         <!--Xiaoxi View Controller-->
         <scene sceneID="5YD-7f-0L9">
             <objects>
-                <viewController id="nmk-0d-lJA" customClass="XiaoxiViewController" sceneMemberID="viewController">
+                <viewController id="nmk-0d-lJA" customClass="XiaoxiViewController" customModule="jianzhiapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WTf-cD-ncx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

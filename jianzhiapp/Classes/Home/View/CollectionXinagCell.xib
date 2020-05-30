@@ -78,7 +78,7 @@
                             <constraint firstAttribute="height" constant="1" id="Y7G-ae-kJ6"/>
                         </constraints>
                     </view>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Simulator Screen Shot - iPhone 8 - 2020-05-24 at 10.53.35" translatesAutoresizingMaskIntoConstraints="NO" id="jhS-22-tOO">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touxiang1" translatesAutoresizingMaskIntoConstraints="NO" id="jhS-22-tOO">
                         <rect key="frame" x="15" y="124.5" width="60" height="60"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="574-8K-C1e"/>
@@ -161,6 +161,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="Simulator Screen Shot - iPhone 8 - 2020-05-24 at 10.53.35" width="320" height="320"/>
+        <image name="touxiang1" width="111" height="103"/>
     </resources>
 </document>

@@ -15,33 +15,7 @@ private let kItemH : CGFloat = kScreenW*1/3
 private let KNrmalCellID = "KNrmalCellID"
 
 class RecommendViewController: UIViewController {
-    let string = """
-       你需要完成这样的工作:
-
-       1、负责公司所有产品线的交互设计，包括Web、ios、Android、Windows/Mac客户端;
-
-       2、与产品经理沟通，协助其系统地梳理需求并根据需求完成交互原型设计:
-
-       3、建立和主导公司的交互设计风格;
-
-       4、参与部门内外用户体验相关的工作。
-
-       我们需要这样的你:
-
-       1、本科及以上专业，工业设计等相关专业优先;
-
-       2、2年以上互联网产品交互设计工作经验，有各个平台的项目经验的优先(投递简历请附上作品)
-
-       3、热爱设计，享受设计，有志设计出拥有最佳用户体验的办公产品;
-
-       4、熟练使用常见的设计工具和设计表现方法;
-
-       5、关注用户需求，具备较强的逻辑思维能力;
-
-       6、具备团队意识和能力，能够高效和融洽的与各角色的人员协同工作;
-
-       7、善于学习，乐于创新。
-       """
+    let string = "sadas "
     // MARK:- 懒加载属性
     private lazy var collectionView : UICollectionView = {[unowned self] in
         //1、创建布局
@@ -65,6 +39,7 @@ class RecommendViewController: UIViewController {
         
         setupUI()
     }
+    
    
 }
 

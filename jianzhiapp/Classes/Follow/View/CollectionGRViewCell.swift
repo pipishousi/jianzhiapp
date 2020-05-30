@@ -9,10 +9,11 @@
 import UIKit
 
 class CollectionGRViewCell: UICollectionViewCell {
-
+  
+ 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
     }
 
 }

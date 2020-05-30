@@ -34,7 +34,7 @@
                         <color key="textColor" red="0.7257933937823835" green="0.72244663414935129" blue="0.70716735223141447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Simulator Screen Shot - iPhone 8 - 2020-05-24 at 10.53.35" translatesAutoresizingMaskIntoConstraints="NO" id="hzC-jK-ARA">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touxiang2" translatesAutoresizingMaskIntoConstraints="NO" id="hzC-jK-ARA">
                         <rect key="frame" x="10" y="110" width="24" height="24"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="24" id="9MN-uY-e1r"/>
@@ -129,6 +129,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="Simulator Screen Shot - iPhone 8 - 2020-05-24 at 10.53.35" width="320" height="320"/>
+        <image name="touxiang2" width="111" height="103"/>
     </resources>
 </document>

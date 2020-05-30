@@ -11,9 +11,16 @@ import UIKit
 private let kTitleViewH : CGFloat = 40
 
 class HomeViewController: UIViewController {
+         let xiang = Common()
+    var statusBarHeight: CGFloat = 0
+    /// iPhoneX、iPhoneXR、iPhoneXs、iPhoneXs Max等
+        /// 判断刘海屏，返回true表示是刘海屏
+        ///
+        
+    
     // MARK:- 懒加载属性
     fileprivate lazy var pageTitleView : PageTitleView = {[weak self] in
-        let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH, width: kScreenW, height: kTitleViewH)
+        let titleFrame = CGRect(x: 0, y: xiang.kStatusBarH + kNavigationBarH, width: kScreenW, height: kTitleViewH)
         let titles = ["推荐", "最新", "娱乐", "趣玩"]
         let titleView = PageTitleView(frame: titleFrame, titles: titles)
         titleView.delegate = self
@@ -23,8 +30,9 @@ class HomeViewController: UIViewController {
     fileprivate lazy var pageContentView : PageContentView = {[weak self] in
         
         // 1.确定内容的frame
-        let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH - kTabbarH
-        let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentH)
+        print(2)
+        let contentH = kScreenH - xiang.kStatusBarH - (self?.navigationController!.navigationBar.frame.size.height)! - kTitleViewH - kTabbarH
+        let contentFrame = CGRect(x: 0, y: xiang.kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentH)
         
         // 2.确定所有的子控制器
         var childVcs = [UIViewController]()
@@ -37,12 +45,19 @@ class HomeViewController: UIViewController {
         contentView.delegate = self
         return contentView
     }()
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+          if #available(iOS 13.0, *) {
+              xiang.kStatusBarH = UIApplication.shared.keyWindow?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
+          } else {
+              xiang.kStatusBarH = UIApplication.shared.statusBarFrame.height
+          }
         self.view.backgroundColor = UIColor.white
         self.title = "首页"
-        navigationController?.navigationBar.barTintColor = UIColor(hue: 125, saturation: 178, brightness: 190, alpha: 1.0)
+        navigationController?.navigationBar.barTintColor = UIColor(r: 253, g: 217, b: 68)
         setupUI()
     }
     

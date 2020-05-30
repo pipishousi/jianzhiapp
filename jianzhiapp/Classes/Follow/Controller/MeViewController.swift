@@ -12,9 +12,10 @@ private let kGameViewH : CGFloat = 90
 private let kItemW : CGFloat = 90
 private let kItemH : CGFloat = 60
 private let KMeCellID = "KMeCellID"
+private let KGRCellID = "KGRCellID"
 private let kTitleViewH : CGFloat = 40
 class MeViewController: UIViewController {
-   
+    lazy var btn : CustomBtn = CustomBtn()
     // MARK:- 懒加载属性
     private lazy var collectionMeView : UICollectionView = {[unowned self] in
         //1、创建布局
@@ -29,39 +30,57 @@ class MeViewController: UIViewController {
         collectionMeView.delegate = self
         collectionMeView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         collectionMeView.register(UINib(nibName: "CollectionMeCell", bundle: nil), forCellWithReuseIdentifier: KMeCellID)
+        collectionMeView.register(UINib(nibName: "CollectionGRViewCell", bundle: nil), forCellWithReuseIdentifier: KGRCellID)
+        
         return collectionMeView
-    }()
+        }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.red
-        print("213123")
+        
+        
         setupUI()
     }
     
-
-
+    
+    
 }
 // MARK:- 设置UI界面内容
 extension MeViewController {
     private func setupUI(){
         view.addSubview(collectionMeView)
-      
-       }
+        navigationController?.navigationBar.barTintColor = UIColor(r: 255, g: 213, b: 70)
+        
+        //按钮样式
+        btn.frame = CGRect(x: 112, y: 34, width: 100, height: 50)
+        btn.setTitle("登录", for: .normal)
+        btn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
+        //        btn.center = view.center
+        btn.addTarget(self, action: #selector(MeViewController.btnClick(sender:)), for: .touchUpInside)
+        
+        
+    }
 }
+
 // MARK:- 遵守协议
 extension MeViewController: UICollectionViewDataSource{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 4
+        return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return 2
     }
     
-
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: KMeCellID, for: indexPath)
+        if indexPath.item ==  0 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: KGRCellID, for: indexPath) as! CollectionGRViewCell
+            
+            cell.addSubview(btn)
+            
+            return cell
+        }
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: KMeCellID, for: indexPath) as! CollectionMeCell
         
-        cell.backgroundColor = UIColor.white
         
         return cell
     }
@@ -79,9 +98,31 @@ extension MeViewController: UICollectionViewDataSource{
 extension MeViewController: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-//        let xiangVc = XiangViewController()
-//        xiangVc.streing = string
-//        navigationController?.pushViewController(xiangVc, animated: true)
+        
+    }
+}
+extension MeViewController: UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if indexPath.item == 0 {
+            return CGSize(width: kScreenW, height: 213)
+        }
+        return CGSize(width: kScreenW, height:142)
     }
 }
 
+
+//MARK:- 事件监听
+extension MeViewController: LigonMeDelegate{
+    func LigonusernameData(username: String) {
+        btn.setTitle(username, for: .normal)
+    }
+    
+    
+    @objc fileprivate func btnClick(sender:UIButton) {
+        sender.isSelected = !sender.isSelected
+        let login = LigonViewController()
+        login.delegate = self
+        self.navigationController?.pushViewController(login, animated: true)
+    }
+    
+}
