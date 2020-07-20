@@ -27,7 +27,7 @@
         <scene sceneID="a8i-hu-ubm">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="btr-G3-Yv9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="信息" image="Message_x" selectedImage="Message_m" id="QoQ-Te-if9"/>
+                    <tabBarItem key="tabBarItem" title="信息" image="Message_m" selectedImage="Message_x" id="QoQ-Te-if9"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5SA-yh-Vlp">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -44,7 +44,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Message_m" width="22" height="22"/>
-        <image name="Message_x" width="22" height="22"/>
+        <image name="Message_m" width="20" height="20"/>
+        <image name="Message_x" width="18" height="17"/>
     </resources>
 </document>

@@ -10,8 +10,16 @@ import UIKit
 
 class CollectionXinagZWCell: UICollectionViewCell {
 
+    @IBOutlet weak var mianfeipeixun: UIView!
+    @IBOutlet weak var youticheng: UIView!
+    @IBOutlet weak var gongzuochengshi: UILabel!
+    @IBOutlet weak var jiesuanfangshi: UILabel!
+    @IBOutlet weak var gongzi: UILabel!
+    @IBOutlet weak var biaoti: UILabel!
+    @IBOutlet weak var remen: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        remen.isHidden = true
         // Initialization code
     }
 

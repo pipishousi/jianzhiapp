@@ -11,6 +11,8 @@ import UIKit
 class CollectionGRViewCell: UICollectionViewCell {
   
  
+    @IBOutlet weak var touxiang: UIImageView!
+    @IBOutlet weak var kuaijiecaidan: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
 

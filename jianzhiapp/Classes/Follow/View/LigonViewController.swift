@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import RealmSwift
 protocol LigonMeDelegate {
     func LigonusernameData(username: String)
 }
 class LigonViewController: UIViewController, UITextFieldDelegate{
     var delegate: LigonMeDelegate?
+    var userjob: Results<User>?
     
+    // 获取默认的 Realm 数据库
+    let realm = try! Realm()
+    let myDog = User()
     lazy var txtBtnLigon : CustomBtn = CustomBtn()
     lazy var txtBtnRegistered : CustomBtn = CustomBtn()
     //获取屏幕尺寸
@@ -39,7 +44,7 @@ class LigonViewController: UIViewController, UITextFieldDelegate{
         LayoutUI()
         //猫头鹰动画实现
         Maotouyin()
-
+        
         
     }
     
@@ -68,21 +73,21 @@ extension LigonViewController{
             title: "提示",
             message: message,
             preferredStyle: .alert)
-
+        
         // 建立[確認]按鈕
         let okAction = UIAlertAction(
             title: "我知道了",
             style: .default,
             handler: {
-            (action: UIAlertAction!) -> Void in
+                (action: UIAlertAction!) -> Void in
         })
         alertController.addAction(okAction)
         
         // 顯示提示框
         self.present(
-          alertController,
-          animated: true,
-          completion: nil)
+            alertController,
+            animated: true,
+            completion: nil)
     }
     
     //布局UI界面
@@ -228,51 +233,87 @@ extension LigonViewController{
     @objc func ligonClick(sender:UIButton){
         print("我点击了登录")
         //登录验证
+         CBToast.showToastAction()
         ligonVerification()
         
     }
     //跳转注册页面
     @objc func Registered(sender:UIButton){
-       
+        
         // print("我点击了注册")
         let registered = RegisteredViewController()
-        navigationController?.pushViewController(registered, animated: true)
+        self.present(registered, animated: true, completion: nil)
+        //        navigationController?.pushViewController(registered, animated: true)
         
     }
     //登录验证
     func ligonVerification() {
-        delegate?.LigonusernameData(username: "小小白")
-         self.navigationController?.popViewController(animated: true)
+//        self.navigationController?.popViewController(animated: true)
+        
+        let username = txtUser.text
+        let password = txtPwd.text
+        if username == "" {
+            self.simpleHint(message: "亲！您还没有输入账号哦")
+        }else{
+            if password == ""{
+                self.simpleHint(message: "亲！您还没有输入密码哦")
+            }else{
+               
+                //自己定义时间和位置
+                BmobUser.loginInbackground(withAccount: username, andPassword: password) { (user, error) in
+                    if user != nil {
+                        //关闭
+                        let users = user
+                        self.saveuserData(username:users!)
+                        
+                    }else{
+                        self.simpleHint(message: "账号或者密码错误")
+                    }
+                }
+            }
+        }
+    }
+    func saveuserData(username: BmobUser){
+        //查找GameScore表
+//        print(12342)
+        let query:BmobQuery = BmobQuery(className: "_User")
+        query.getObjectInBackground(withId: username.objectId!) { (obj, error) in
+            if error != nil {
+                //进行错误处理
+            }else{
+                if obj != nil{
+                    if obj!.object(forKey: "name") as? String == nil {
+                        self.delegate?.LigonusernameData(username: (obj!.object(forKey: "username") as? String)! )
+                    }else{
+                        self.delegate?.LigonusernameData(username: (obj!.object(forKey: "name") as? String)! )
+                        
+                    }
+                    CBToast.hiddenToastAction()
+                            self.dismiss(animated: true, completion: nil)
 
-//        let username = txtUser.text
-//        let password = txtPwd.text
-//        if username == "" {
-//            self.simpleHint(message: "亲！您还没有输入账号哦")
-//        }else{
-//            if password == ""{
-//                self.simpleHint(message: "亲！您还没有输入密码哦")
-//            }else{
-//                //自己定义时间和位置
-//
-//                BmobUser.loginInbackground(withAccount: username, andPassword: password) { (user, error) in
-//                    if user != nil {
-//                        //关闭
-//                        CBToast.hiddenIndicatorToastAction()
-//                        self.navigationController?.popViewController(animated: true)
-//                    }else{
-//                     self.simpleHint(message: "账号或者密码错误")
+//                    self.myDog.username = (obj!.object(forKey: "username") as? String)!
+//                    self.myDog.userID  = (obj!.object(forKey: "objectId") as? String)!
+//                    self.myDog.id  = (obj!.object(forKey: "objectId") as? String)!
+//                    self.myDog.myadvantage  = (obj!.object(forKey: "myadvantage") as? String)!
+//                    self.myDog.wechatnumber  = (obj!.object(forKey: "wechatnumber") as? String)!
+//                    self.myDog.name  = (obj!.object(forKey: "name") as? String)!
+//                    self.myDog.gender  = (obj!.object(forKey: "gender") as? Bool)!
+//                    // 数据存储十分简单
+//                    try! self.self.realm.write {
+//                        
+//                        self.realm.add(self.myDog, update: .modified)
 //                    }
-//                }
-//            }
-//        }
+                }
+            }
+        }
+        
+        
+    }
+    //登录框状态枚举
+    enum LoginShowType {
+        case NONE
+        case USER
+        case PASS
     }
     
 }
-//登录框状态枚举
-enum LoginShowType {
-    case NONE
-    case USER
-    case PASS
-}
-
-

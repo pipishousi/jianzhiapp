@@ -41,6 +41,15 @@ class WsjViewController: UIViewController {
         view.backgroundColor = UIColor(r: 250, g: 250, b: 250)
     }
 
-   
+   func loadDataFinished() {
+       // 1.停止动画
+       animImageView.stopAnimating()
+       
+       // 2.隐藏animImageView
+       animImageView.isHidden = true
+       
+       // 3.显示内容的View
+       contentView?.isHidden = false
+   }
 
 }

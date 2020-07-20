@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,6 +21,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3aF-NF-KUO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1707" y="502"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="p4v-xM-FXF">
+            <objects>
+                <viewController id="Cc9-Mr-hUT" customClass="ViewController" customModule="jianzhiapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hSY-ZX-52O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQv-Lf-2bU">
+                                <rect key="frame" x="20" y="574" width="227" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="插入文字"/>
+                                <connections>
+                                    <action selector="btnClick4:" destination="Cc9-Mr-hUT" eventType="touchUpInside" id="K3K-SF-34k"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="sdfdsf" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9cW-Pu-N2L">
+                                <rect key="frame" x="20" y="121" width="280" height="331"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92208116419999997" green="0.98799532300000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVN-6T-dAl">
+                                <rect key="frame" x="20" y="536" width="227" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="插入图片3：适应textView宽度"/>
+                                <connections>
+                                    <action selector="btnClick3:" destination="Cc9-Mr-hUT" eventType="touchUpInside" id="OLa-YI-ohu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0SH-ji-IGO">
+                                <rect key="frame" x="20" y="498" width="168" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="插入图片2：适应行高"/>
+                                <connections>
+                                    <action selector="btnClick2:" destination="Cc9-Mr-hUT" eventType="touchUpInside" id="Xha-V1-vTa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5LC-mH-ywx">
+                                <rect key="frame" x="20" y="460" width="218" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="插入图片1：保持原始尺寸"/>
+                                <connections>
+                                    <action selector="btnClick1:" destination="Cc9-Mr-hUT" eventType="touchUpInside" id="RTV-eL-NsB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="nWA-TD-ucG"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="9cW-Pu-N2L" id="EKL-dP-1Gg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fja-CS-5Ee" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-832" y="502"/>
         </scene>
     </scenes>
 </document>

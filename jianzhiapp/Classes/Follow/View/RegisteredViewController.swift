@@ -226,7 +226,9 @@ extension RegisteredViewController{
     //返回登录页面
     @objc func ligon(sender:UIButton){
           print("我点击了登录")
-        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
+
+//        self.navigationController?.popViewController(animated: true)
        
     }
     //将注册信息上传到服务器
@@ -245,6 +247,7 @@ extension RegisteredViewController{
                 user.password = password
                 user.signUpInBackground { (isSuccessful, error) in
                     if isSuccessful {
+                        
                         self.simpleHint(message: "亲！恭喜您注册成功")
                     }else{
                         print("Sign up error\(error)")

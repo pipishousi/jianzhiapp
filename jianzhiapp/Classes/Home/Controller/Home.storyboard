@@ -27,7 +27,7 @@
         <scene sceneID="KWv-cC-uEu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Dq-CJ-qss" customClass="ZingdingyiNavigationViewController" customModule="jianzhiapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首页" image="Home_x" selectedImage="Home_m" id="pNT-R8-w19" userLabel="首页"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="Home_m" selectedImage="Home_x" id="pNT-R8-w19" userLabel="首页"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="o4c-ub-Kdv">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -49,6 +49,6 @@
     </scenes>
     <resources>
         <image name="Home_m" width="22" height="22"/>
-        <image name="Home_x" width="22" height="22"/>
+        <image name="Home_x" width="20" height="20"/>
     </resources>
 </document>

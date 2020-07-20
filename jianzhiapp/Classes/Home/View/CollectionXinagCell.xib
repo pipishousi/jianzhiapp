@@ -10,10 +10,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionXinagCell" customModule="jianzhiapp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="1051"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="1170"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="1051"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="1170"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="交互设计师" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNK-1Z-LuE">
@@ -25,6 +25,12 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="职位详情" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIb-LJ-D0b">
                         <rect key="frame" x="15" y="235.5" width="94" height="28"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="某某公司" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VZ-5l-hcg">
+                        <rect key="frame" x="20" y="907" width="66" height="20"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -122,6 +128,25 @@
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ll6-CE-R1f">
+                        <rect key="frame" x="0.0" y="891.5" width="375" height="1"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="X0I-kJ-vi4"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="qcw-RK-deh">
+                        <rect key="frame" x="20" y="942" width="335" height="140"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="140" id="a6V-8o-vdr"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
                 </subviews>
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -137,13 +162,19 @@
                 <constraint firstItem="cys-rW-xtQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="L3a-4c-CMw"/>
                 <constraint firstItem="LVR-nN-W0W" firstAttribute="top" secondItem="jhS-22-tOO" secondAttribute="bottom" constant="30" id="LWY-4g-0d4"/>
                 <constraint firstItem="xHh-fH-fgQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="Nqt-sc-Jnk"/>
+                <constraint firstItem="qcw-RK-deh" firstAttribute="top" secondItem="0VZ-5l-hcg" secondAttribute="bottom" constant="15" id="Nr7-8u-eAV"/>
                 <constraint firstItem="YIb-LJ-D0b" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="Nry-sN-WVl"/>
                 <constraint firstItem="jhS-22-tOO" firstAttribute="top" secondItem="xHh-fH-fgQ" secondAttribute="bottom" constant="30" id="O2B-yQ-fTe"/>
                 <constraint firstItem="SRp-Ml-9d3" firstAttribute="leading" secondItem="aog-q7-A0y" secondAttribute="trailing" constant="16" id="QWm-QF-OZ2"/>
+                <constraint firstAttribute="trailing" secondItem="qcw-RK-deh" secondAttribute="trailing" constant="20" id="R9Q-vm-8mn"/>
+                <constraint firstAttribute="trailing" secondItem="ll6-CE-R1f" secondAttribute="trailing" id="SH9-wM-6Rm"/>
                 <constraint firstItem="k2o-cs-qwe" firstAttribute="leading" secondItem="jhS-22-tOO" secondAttribute="trailing" constant="8" id="U5Q-9T-p0d"/>
+                <constraint firstItem="ll6-CE-R1f" firstAttribute="top" secondItem="KDA-Nb-mok" secondAttribute="bottom" constant="16" id="UJ5-vg-i0i"/>
                 <constraint firstItem="pNK-1Z-LuE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="UfL-Xg-Y1u"/>
                 <constraint firstItem="On4-Uw-O0T" firstAttribute="top" secondItem="pNK-1Z-LuE" secondAttribute="bottom" constant="8" id="b6K-jy-xg3"/>
                 <constraint firstItem="On4-Uw-O0T" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="bFG-Cs-dly"/>
+                <constraint firstItem="0VZ-5l-hcg" firstAttribute="top" secondItem="ll6-CE-R1f" secondAttribute="bottom" constant="14.5" id="bpL-cE-nTb"/>
+                <constraint firstItem="0VZ-5l-hcg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="cXA-NB-Irv"/>
                 <constraint firstAttribute="trailing" secondItem="xHh-fH-fgQ" secondAttribute="trailing" constant="15" id="eqd-uR-Q9R"/>
                 <constraint firstItem="6xU-8e-m1P" firstAttribute="leading" secondItem="k2o-cs-qwe" secondAttribute="leading" id="g98-hJ-aLT"/>
                 <constraint firstItem="SRp-Ml-9d3" firstAttribute="centerY" secondItem="On4-Uw-O0T" secondAttribute="centerY" id="h2n-lj-2yS"/>
@@ -151,16 +182,32 @@
                 <constraint firstItem="aog-q7-A0y" firstAttribute="leading" secondItem="On4-Uw-O0T" secondAttribute="trailing" constant="16" id="l8r-GV-f91"/>
                 <constraint firstItem="LVR-nN-W0W" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="mQZ-tD-wHq"/>
                 <constraint firstItem="xHh-fH-fgQ" firstAttribute="top" secondItem="On4-Uw-O0T" secondAttribute="bottom" constant="16" id="obc-Ud-1jc"/>
+                <constraint firstItem="ll6-CE-R1f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="peM-20-3ub"/>
                 <constraint firstAttribute="trailing" secondItem="LVR-nN-W0W" secondAttribute="trailing" constant="15" id="rxW-Ja-l6z"/>
                 <constraint firstAttribute="trailing" secondItem="KDA-Nb-mok" secondAttribute="trailing" constant="15" id="t4s-co-8H4"/>
                 <constraint firstItem="pNK-1Z-LuE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="tBa-3m-4a2"/>
+                <constraint firstItem="qcw-RK-deh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="xL9-an-Uhx"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="375" height="1051"/>
-            <point key="canvasLocation" x="373.1884057971015" y="457.03125"/>
+            <size key="customSize" width="375" height="1170"/>
+            <connections>
+                <outlet property="AvatarImage" destination="jhS-22-tOO" id="LLF-Ev-MU5"/>
+                <outlet property="Education" destination="SRp-Ml-9d3" id="Aij-Th-wQC"/>
+                <outlet property="Job" destination="pNK-1Z-LuE" id="vH6-cQ-pJW"/>
+                <outlet property="Jobcity" destination="On4-Uw-O0T" id="jqR-8E-BQa"/>
+                <outlet property="Salary" destination="cys-rW-xtQ" id="TIU-S2-hmb"/>
+                <outlet property="Workingyears" destination="aog-q7-A0y" id="hsF-7C-J4L"/>
+                <outlet property="companyposition" destination="6xU-8e-m1P" id="RyS-3F-mFW"/>
+                <outlet property="gognsiming" destination="0VZ-5l-hcg" id="OnO-7f-pHc"/>
+                <outlet property="gognsizhaopian" destination="qcw-RK-deh" id="AdJ-QI-npk"/>
+                <outlet property="jobRequirements" destination="KDA-Nb-mok" id="aPL-sg-pFR"/>
+                <outlet property="nickname" destination="k2o-cs-qwe" id="tkb-0I-LCR"/>
+            </connections>
+            <point key="canvasLocation" x="373.1884057971015" y="496.875"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="bg.png" width="960" height="540"/>
         <image name="touxiang1" width="111" height="103"/>
     </resources>
 </document>

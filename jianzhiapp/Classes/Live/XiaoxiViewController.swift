@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XiaoxiViewController: WsjViewController {
+class XiaoxiViewController: WuzhuangtaiViewController {
    
     
     // 当前statusBar使用的样式
@@ -21,6 +21,9 @@ class XiaoxiViewController: WsjViewController {
      
     override func viewDidLoad() {
         super.viewDidLoad()
+        //导航栏透明
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
         // 1.先调用super.setupUI()
         super.setupUI()
         self.title = "消息"

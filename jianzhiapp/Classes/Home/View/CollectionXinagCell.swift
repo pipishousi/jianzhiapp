@@ -12,7 +12,19 @@ import UIKit
 class CollectionXinagCell: UICollectionViewCell {
 
      
-    
+    @IBOutlet weak var Job: UILabel!
+    @IBOutlet weak var Salary: UILabel!
+    @IBOutlet weak var Workingyears: UILabel!
+    @IBOutlet weak var Education: UILabel!
+    @IBOutlet weak var jobRequirements: UILabel!
+    @IBOutlet weak var companyposition: UILabel!
+    @IBOutlet weak var nickname: UILabel!
+    @IBOutlet weak var AvatarImage: UIImageView!
+   
+    @IBOutlet weak var gognsiming: UILabel!
+    @IBOutlet weak var gognsizhaopian: UIImageView!
+    @IBOutlet weak var Jobcity: UILabel!
+
 
       
 

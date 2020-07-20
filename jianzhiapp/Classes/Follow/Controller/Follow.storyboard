@@ -27,7 +27,7 @@
         <scene sceneID="Y5V-qK-lM6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lDF-XK-AAx" customClass="MeNavgatViewController" customModule="jianzhiapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的" image="Profile_x" selectedImage="Profile_m" id="VVN-Ag-3qb"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="Profile_m" selectedImage="Profile_x" id="VVN-Ag-3qb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Cvk-pk-RR0">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

@@ -10,8 +10,11 @@ import UIKit
 
 class CollectionMeCell: UICollectionViewCell {
 
+    @IBOutlet weak var sfsdf: UIView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
+     
         // Initialization code
     }
 
